@@ -164,3 +164,13 @@ function getRandomInterval(min, max) {
 
 //Setting Interval and calling main function in every interval
 setInterval(retrieveEmailsAndSendReplies, getRandomInterval(45, 120) * 1000);
+
+
+/* NOTES FEATURES for future updates
+
+1.Inclusion of a Database for better edge cases
+2.Using a better data fetching mechanism like grpc, to get selected data instead of bulk data
+3.Using type safety
+4.Handling edge cases in a more efficient way and include more filters while fetching the data, currently our application is replying
+to all the unread messages, without any care for the time and the sender.
+*/
